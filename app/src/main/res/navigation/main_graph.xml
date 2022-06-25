@@ -8,34 +8,33 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.example.navigation_controll.FirstFragment"
-        android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
-            android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/navigation"
+            android:id="@+id/action_firstFragment_to_secondFragment2"
+            app:destination="@id/secondFragment2"
             app:enterAnim="@anim/enter_anim"
             app:exitAnim="@anim/exit_anim"
             app:popEnterAnim="@anim/pop_enter_anim"
             app:popExitAnim="@anim/pop_exit_anim" />
         <action
-            android:id="@+id/action_firstFragment_to_thirdFragment"
-            app:destination="@id/navigation"
+            android:id="@+id/action_firstFragment_to_thirdFragment2"
+            app:destination="@id/thirdFragment2"
             app:enterAnim="@anim/enter_anim"
             app:exitAnim="@anim/exit_anim"
             app:popEnterAnim="@anim/pop_enter_anim"
             app:popExitAnim="@anim/pop_exit_anim" />
     </fragment>
-    <navigation android:id="@+id/navigation"
-        app:startDestination="@id/thirdFragment">
-        <fragment
-            android:id="@+id/secondFragment"
-            android:name="com.example.navigation_controll.SecondFragment"
-            android:label="fragment_second"
-            tools:layout="@layout/fragment_second" />
-        <fragment
-            android:id="@+id/thirdFragment"
-            android:name="com.example.navigation_controll.ThirdFragment"
-            android:label="fragment_third"
-            tools:layout="@layout/fragment_third" />
-    </navigation>
+    <fragment
+        android:id="@+id/secondFragment2"
+        android:name="com.example.navigation_controll.SecondFragment"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment2"
+        android:name="com.example.navigation_controll.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.navigation_controll.SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
